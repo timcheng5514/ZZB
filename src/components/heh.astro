@@ -1,0 +1,5 @@
+---
+const { title, content, green, sub, addition } = Astro.props;
+---
+
+<div class=`shadow-lg naiyou mx-4 sm:mx-8 md:mx-20 lg:mx-40 ${addition}`><p class="naiyou-title font-bold">{title}</p>{content}<slot/></div>

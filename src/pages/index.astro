@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Naiyou from '../components/heh.astro';
+import '../styles/global.css' ;
+import Tim from '../components/tim.astro';
+import SNS from '../components/sns.astro'
+import Version from '../components/version.astro';
+import Bg from '../layouts/bg.astro'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+        <Bg content="animate-unblur"/>
+		<Tim/>
+		<SNS/>
+		<Naiyou title="簡單的自我介紹">    簡單的自我介紹：</p>這裡粽，是個音遊眾<br>可以叫我粽子或者直接叫本名<br>如果遇到我歡迎聯機<br>座標 高雄<br><br>日文系在讀學生，對電腦單純有興趣，無聊的時候很喜歡拿電腦整活<br>老遊戲機愛好者，其實很想搜集一堆老遊戲機但目前很窮搜集不完<br>其實還想買相機但沒有錢<br>日本語⚠️<br>English✅<br>中文（台灣繁體）✅</Naiyou>
+		<Naiyou title="坑單">ヨルシカ<br>ホロライブ箱推<br>ロクデナシ<br><p class="text-emerald-600">初音ミク</p><p class="text-xs text-gray-500">...後續可能會補 </p></Naiyou>
+		<Naiyou title="常駐機廳">競音二店<br>遠百湯</Naiyou>
+		<Naiyou title="音遊R值">
+			<div class="flex justify-center items-center mx-auto mt-10">
+			<img src="src/assets/maimai.png" alt="Maimai成績" class="arc_score">
+            </div>
+              <div class="flex justify-center items-center mx-auto ">    
+                <img src="src/assets/chunithm.png" alt="chunithm成績" class="arc_score"> 
+            </div>
+            <p class="text-gray-500 text-xs">...我真的不會打舞萌</p></Naiyou>
+		<Naiyou title="遊戲機們">Microsoft Xbox 360 <br> Nintendo Wii <br>Sony PlayStation Portable <br> Nintendo DS Lite <br>Nintendo Switch(OLED) <br> Nintendo 3DS(還在路上)</Naiyou>
+		<Version system="ZZß V2" update="250708006">
+</body>
 
-<Layout>
-	<Welcome />
-</Layout>
+    
+</html>

@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+
+
+            .head   {
+                        display: block;
+                        text-align: center;
+                        padding: 10px;
+                        font-size: x-large;
+                    }
+
+            body    {  
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        text-align: center;
+                    }  
+
+            .naiyou {
+                        background-color: gainsboro;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                        border: 10px solid;
+                        border-color: gainsboro;
+                        display: block;
+                        padding: 5px;
+                        border-radius: 18px;
+                    }
+            .naiyou-title   {
+                                margin-top: 0;
+                                font-size: larger;
+                                border-bottom: 1px solid gray;
+                                text-align: left;
+                                opacity: 100%;
+                            }
+
+/* animation parts */
+
+            @keyframes unblur {
+                                0% {
+                                    filter: blur(90px);
+                                    }
+                                100% {
+                                    filter: blur(0);
+                                    }
+                            }
+
+            .animate-unblur {
+                                animation: unblur 0.35s ease-out forwards;
+                            }
+
+            @keyframes typing {
+                            from {
+                                 width: 0;
+                                }
+                            to {
+                                width: 100%;
+                                }
+                            }
+
+            @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+            }
+
+            .typing {
+            display: inline-block;
+            animation: typing 1.5s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
+            border-right: 3px solid;
+            white-space: nowrap;
+            overflow: hidden;
+            }
